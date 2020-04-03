@@ -1,24 +1,24 @@
 var db = require("../models");
 
-module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+module.exports = function (app) {
+  // Get all dogs
+  app.get("/api/dogs", function (req, res) {
+    db.Dog.findAll({}).then(function (data) {
+      res.json(data);
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // Create a new dog
+  app.post("/api/dogs", function (req, res) {
+    db.Dog.create(req.body).then(function (data) {
+      res.json(data);
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  // Delete a dog by id
+  app.delete("/api/dogs/:id", function (req, res) {
+    db.Dog.destroy({ where: { id: req.params.id } }).then(function (data) {
+      res.json(data);
     });
   });
 };
