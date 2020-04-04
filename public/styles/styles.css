@@ -44,3 +44,20 @@
   padding: 20px 35px;
 }
 
+#gallery {
+  margin: 50px 0;
+}
+
+.dogImg {
+    width: 100%;
+    margin: 10px 0;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.card-title {
+  margin: 0;
+}
