@@ -1,31 +1,48 @@
-<div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
-          </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
+{{!-- Slider CDN Links --}}
+<link rel="slider stylesheet" href="/ism/css/my-slider.css" />
+<script src="/ism/js/ism-2.2.min.js"></script>
+
+<div class="container-fluid">
+
+
+  <div class="row">
+    <div class="home-body">
+      <div class="row">
+        <h3 id="aboutUs">About Us</h3>
+        <p class="aboutUs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quas quaerat
+          molestias rem deleniti harum atque neque, eos ab? Culpa, alias totam, eos neque nesciunt
+          quisquam iusto voluptatibus accusantium quidem minima soluta facere non, eum praesentium
+          tenetur impedit vitae ratione nisi? Dolore aliquid reprehenderit enim minima deleniti fuga
+          praesentium amet?</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 text-center home-buttons">
+          <button class="btn btn-md">List a dog</button>
+          <button class="btn btn-md">Buy a dog</button>
+          <button class="btn btn-md">Adopt a dog</button>
+        </div>
       </div>
     </div>
+  </div>
+
+
+  <div class="row">
+
+    <div class="ism-slider" id="my-slider">
+      <ol>
+        <li>
+          <img src="/ism/image/slides/pic1.jpg">
+        </li>
+        <li>
+          <img src="/ism/image/slides/pic2.jpg">
+        </li>
+        <li>
+          <img src="/ism/image/slides/pic3.jpg">
+        </li>
+      </ol>
+    </div>
+
   </div>
 </div>
 
