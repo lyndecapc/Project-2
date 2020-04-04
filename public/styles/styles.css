@@ -1,3 +1,46 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+.clear-fix {
+  height: 75px;
+
+}
+
+.footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #e6ce96;
+  color: #506FB3;
+  text-align: center;
+}
+
+/* .navbar {
+  background-color: #e6ce96;
+} */
+
+.btn {
+  background-color: #506FB3;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  padding: 15px;
+} 
+
+.btn-tan {
+  background-color: #e6ce96;
+  color: #506FB3;
+  padding: 5px 13px;
+}
+
+.navbar {
+  /* border-bottom: 3px solid #506FB3; */
+  background-color: #506FB3;
+  height: 100px;
+  padding: 20px 35px;
+}
+
