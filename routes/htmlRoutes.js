@@ -4,10 +4,14 @@ module.exports = function (app) {
   // Load index page
   app.get("/", function (req, res) {
     db.Dog.findAll({}).then(function (data) {
-      res.render("index", {
-        msg: "Welcome!",
-        dog: data
-      })
+      res.render("index")
+    })
+  })
+
+  // Load add page
+  app.get("/add", function (req, res) {
+    db.Dog.findAll({}).then(function (data) {
+      res.render("add")
     })
   })
 

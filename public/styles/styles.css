@@ -55,6 +55,35 @@ body {
 }
 
 /* =================================
+            List Dogs
+================================= */
+
+#formBody {
+  width: 50%;
+  margin: 25px 25%;
+}
+
+form {
+  margin-top: 35px;
+}
+
+#formGender,
+#formGWD,
+#formGWK,
+#formGWC {
+  width: 25%;
+}
+
+#addPageTitle {
+  text-align: center;
+  margin-top: 75px;
+}
+
+#formSubmit {
+  margin: 15px 0 0 0;
+}
+
+/* =================================
             Buy Dogs
 ================================= */
 
