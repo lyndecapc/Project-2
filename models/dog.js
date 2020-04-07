@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
       len: [1]
     },
     picture: {
-      type: DataTypes.BLOB,
+      type: DataTypes.STRING,
       notNull: true
     },
     breed: {
