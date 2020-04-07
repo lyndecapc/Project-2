@@ -11,10 +11,19 @@ module.exports = function (app) {
     })
   })
 
+  // Load all dogs
+  app.get("/dogs", function (req, res) {
+    db.Dog.findAll({}).then(function (data) {
+      res.render("dogs", {
+        dog: data
+      })
+    })
+  })
+
   // Load dog page and pass in a dog by id
   app.get("/dogs/:id", function (req, res) {
     db.Dog.findOne({ where: { id: req.params.id } }).then(function (data) {
-      res.render("dogs", {
+      res.render("indvDog", {
         dog: data
       })
     })
