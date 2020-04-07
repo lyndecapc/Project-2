@@ -16,13 +16,10 @@ module.exports = function (app) {
   })
 
   // Load all dogs
-  app.get("/dogs", function (req, res) {
-    db.Dog.findAll({}).then(function (data) {
-      res.render("dogs", {
-        dog: data
-      })
-    })
-  })
+  app.get('/dogs', (req, res) =>
+    db.Dog.findAll()
+      .then(dogs => res.render("dogs", { dogs }))
+      .catch(err => console.log(err)))
 
   // Load dog page and pass in a dog by id
   app.get("/dogs/:id", function (req, res) {

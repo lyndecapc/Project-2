@@ -1,22 +1,33 @@
-<div class="container-fluid">
+<div class="container">
 
-    <h3 id="dogPageTitle">Dogs for Sale</h3>  
+    <h3 id="dogPageTitle">Dogs for Sale</h3>
+
     <!-- Grid row -->
-    <div id="gallery" class="row">
-        <div class="col-md-2"></div>
-        <div id="col1" class="col-md-2">
-            {{!-- col1 --}}
+    <div class="row">
+        {{#each dogs}}
+        <div class="dog">
+            <h5 class="text-center">{{dogName}}</h5>
+            <img class="dogImg" src="{{picture}}" alt="{{dogName}}">
+            <ul>
+                <li><span>Breed:</span> {{breed}}</li>
+                <li><span>Gender:</span> {{gender}}</li>
+                <li><span>Color:</span> {{color}}</li>
+                <li><span>Size:</span> {{size}}</li>
+                <li><span>Age:</span> {{age}}</li>
+                <li><span>Good With Dogs:</span> {{goodWithDogs}}</li>
+                <li><span>Good With Kids:</span> {{goodWithKids}}</li>
+                <li><span>Good With Cats:</span> {{goodWithCats}}</li>
+                <li><span>Location:</span> {{location}}</li>
+            </ul>
+            <div class="sellerButtons">
+                <a href="tel:{{sellerPhone}}"><button class="btn btn-md">Call Seller</button></a>
+                <a href="mailto:{{sellerEmail}}"><button class="btn btn-md">Email Seller</button></a>
+            </div>
         </div>
-        <div id="col2" class="col-md-2">
-            {{!-- col2 --}}
-        </div>
-        <div id="col3" class="col-md-2">
-            {{!-- col3 --}}
-        </div>
-        <div id="col4" class="col-md-2">
-            {{!-- col4 --}}
-        </div>
-        <div class="col-md-2"></div>
+        <hr>
+        {{else}}
+        <p class="text-center">No dogs available</p>
+        {{/each}}
     </div>
 
 </div>
