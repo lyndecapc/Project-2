@@ -1,10 +1,86 @@
-.list-group-item {
-  line-height: 2.5;
+/* =================================
+            Body
+================================= */
+
+body {
+  /* background-image: url(); */
 }
 
-.clear-fix {
-  height: 75px;
+/* =================================
+            NavBar
+================================= */
 
+.navbar {
+  /* border-bottom: 3px solid #506FB3; */
+  background-color: #506FB3;
+  height: 100px;
+  padding: 20px 35px;
+}
+
+/* =================================
+            Home Content
+================================= */
+
+.home-body {
+  background-size: cover;
+  background-color: #e6ce96;
+  margin: 45px 100px;
+  border-radius: 50px;
+}
+
+#aboutUsParagraph {
+  text-align: center;
+  margin: 0 100px;
+}
+
+#aboutUs {
+  margin: 75px 0 20px 0;
+  text-align: center;
+}
+
+.btn {
+  background-color: #506FB3;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  padding: 15px;
+} 
+
+.btn-tan {
+  background-color: #e6ce96;
+  color: #506FB3;
+  padding: 5px 13px;
+}
+
+/* =================================
+            Buy Dogs
+================================= */
+
+#dogPageTitle {
+  text-align: center;
+  margin-top: 75px;
+}
+
+#gallery {
+  margin: 30px 0;
+}
+
+.dogCard {
+    margin: 20px 0;
+}
+
+.card-title {
+  margin: 0;
+}
+
+/* =================================
+            Footer
+================================= */
+
+.clear-fix {
+  height: 125px;
 }
 
 .footer {
@@ -24,75 +100,3 @@
   color: #e6ce96;
   text-decoration: none;
 }
-
-/* .navbar {
-  background-color: #e6ce96;
-} */
-
-.btn {
-  background-color: #506FB3;
-  color: white;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  padding: 15px;
-} 
-
-.btn-tan {
-  background-color: #e6ce96;
-  color: #506FB3;
-  padding: 5px 13px;
-}
-
-.navbar {
-  /* border-bottom: 3px solid #506FB3; */
-  background-color: #506FB3;
-  height: 100px;
-  padding: 20px 35px;
-}
-
-#gallery {
-  margin: 30px 0;
-}
-
-.dogCard {
-    margin: 20px 0;
-}
-
-h3 {
-  text-align: center;
-  margin-top: 75px;
-}
-
-.card-title {
-  margin: 0;
-}
-
-.home-body {
-  background-size: cover;
-}
-
-/* #aboutUs {
-  background: transparent;
-} */
-
-.home-body {
-  background-color: #e6ce96;
-  margin: 45px 100px;
-  border-radius: 50px;
-}
-
-
-.aboutUs {
-  text-align: center;
-  margin-left: 55px;
-  margin-right: 55px;
-}
-
-#aboutUs {
-  margin-left: 55px;
-  margin-right: 55px;
-  text-align: center;
-}
-

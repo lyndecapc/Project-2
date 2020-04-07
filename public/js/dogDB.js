@@ -22,9 +22,7 @@ var refreshDogs = function() {
     var col3 = $("#col3")
     var col4 = $("#col4")
     var activeCol
-    var i = 0;
-
-    // console.log(data)
+    var i = 0
 
     data.map(function(dog) {
 
@@ -73,30 +71,20 @@ var refreshDogs = function() {
   })
 }
 
-// click on buy dog
+// Click on buy dog
 var handleBuyDogClick = function() {
   API.getAllDogs().then(function() {
     refreshDogs()
   })
 }
 
-// click on each dog pic
-var handleDogPicClick = function() {
-//   var idToView = $(this)
-//     // .parent()
-//     .data("id")
-
-//     console.log(idToView)
-
-  
-}
-
 // Listener
 $("#buyDog").on("click", handleBuyDogClick())
+
 $(document).on("click", ".indvDogBtn", function(e){
     console.log(e.target.getAttribute("data-id"))
 
     API.getIndvDog(idToView).then(function(data) {
-        alert(data)
+        
     })
 })
