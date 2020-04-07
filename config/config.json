@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "Jessie",
-    "password": "JumpCrew",
+    "username": "austin",
+    "password": "root",
     "database": "hounders_db",
     "host": "localhost",
     "dialect": "mysql"
