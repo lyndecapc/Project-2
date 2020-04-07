@@ -68,3 +68,31 @@ h3 {
 .card-title {
   margin: 0;
 }
+
+.home-body {
+  background-size: cover;
+}
+
+/* #aboutUs {
+  background: transparent;
+} */
+
+.home-body {
+  background-color: #e6ce96;
+  margin: 45px 100px;
+  border-radius: 50px;
+}
+
+
+.aboutUs {
+  text-align: center;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+#aboutUs {
+  margin-left: 55px;
+  margin-right: 55px;
+  text-align: center;
+}
+
