@@ -85,6 +85,8 @@ $(document).on("click", ".indvDogBtn", function(e){
     console.log(e.target.getAttribute("data-id"))
 
     API.getIndvDog(idToView).then(function(data) {
-        
+        data.map(function(dog){
+          console.log(dog) // still not getting any data
+        })
     })
 })
