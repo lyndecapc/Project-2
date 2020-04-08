@@ -21,13 +21,41 @@ module.exports = function (app) {
       .then(dogs => res.render("dogs", { dogs }))
       .catch(err => console.log(err)))
 
-  // Load dog page and pass in a dog by id
-  app.get("/dogs/:id", function (req, res) {
-    db.Dog.findOne({ where: { id: req.params.id } }).then(function (data) {
-      res.render("indvDog", {
-        dog: data
-      })
+  // Post new dog to db
+  app.post("/add", function (req, res) {
+    let {
+      dogName,
+      picture,
+      breed,
+      gender,
+      size,
+      age,
+      goodWithDogs,
+      goodWithKids,
+      goodWithCats,
+      location,
+      color,
+      sellerPhone,
+      sellerEmail
+    } = req.body
+
+    db.Dog.create({
+      dogName,
+      picture,
+      breed,
+      gender,
+      size,
+      age,
+      goodWithDogs,
+      goodWithKids,
+      goodWithCats,
+      location,
+      color,
+      sellerPhone,
+      sellerEmail
     })
+      .then(dogs => res.redirect("/dogs"))
+      .catch(err => console.log(err))
   })
 
   // Render 404 page for any unmatched routes
