@@ -2,63 +2,87 @@
 <div class="col-md-8">
     <section id="formBody">
         <h3 id="addPageTitle">List a Dog for Sale</h3>
-        <hr>
-        <form>
+        <form action="/add" method="POST">
+            {{!-- Name --}}
             <div class="form-group">
                 <label for="formDogName">Dog Name</label>
-                <input type="text" class="form-control" id="formDogName" placeholder="Your dog's name">
+                <input name="dogName" type="text" class="form-control" id="formDogName" placeholder="Your dog's name" required>
             </div>
+            {{!-- Picture --}}
             <div class="form-group">
                 <label for="formPicture">Picture Link</label>
-                <input type="text" class="form-control" id="formPicture" placeholder="URL Link to dog picture">
+                <input name="picture" type="text" class="form-control" id="formPicture" placeholder="URL Link to dog picture" required>
             </div>
+            {{!-- Breed --}}
             <div class="form-group">
                 <label for="formBreed">Breed</label>
-                <input type="text" class="form-control" id="formBreed" placeholder="Your dog's breed">
+                <input name="breed" type="text" class="form-control" id="formBreed" placeholder="Your dog's breed" required>
             </div>
+            {{!-- Color --}}
             <div class="form-group">
                 <label for="formColor">Color</label>
-                <input type="text" class="form-control" id="formColor" placeholder="Your dog's color">
+                <input name="color" type="text" class="form-control" id="formColor" placeholder="Your dog's color" required>
             </div>
+            {{!-- Age --}}
+            <div class="form-group">
+                <label for="formAge">Age</label>
+                <input name="age" type="text" class="form-control" id="formAge" placeholder="Your dog's age (numbers only)" required>
+            </div>
+            {{!-- Gender --}}
             <div class="form-group">
                 <label for="formGender">Gender</label>
-                <select class="form-control" id="formGender">
+                <select name="gender" class="form-control" id="formGender" required>
                     <option>Male</option>
                     <option>Female</option>
                 </select>
             </div>
+            {{!-- Size --}}
+            <div class="form-group">
+                <label for="formSize">Size</label>
+                <select name="size" class="form-control" id="formSize" required>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+            </div>
+            {{!-- Good With Dogs --}}
             <div class="form-group">
                 <label for="formGWD">Good With Dogs</label>
-                <select class="form-control" id="formGWD">
-                    <option>True</option>
-                    <option>False</option>
+                <select name="goodWithDogs" class="form-control" id="formGWD" required>
+                    <option>true</option>
+                    <option>false</option>
                 </select>
             </div>
+            {{!-- Good With Kids --}}
             <div class="form-group">
                 <label for="formGWK">Good With Kids</label>
-                <select class="form-control" id="formGWK">
-                    <option>True</option>
-                    <option>False</option>
+                <select name="goodWithKids" class="form-control" id="formGWK" required>
+                    <option>true</option>
+                    <option>false</option>
                 </select>
             </div>
+            {{!-- Good With Cats --}}
             <div class="form-group">
                 <label for="formGWC">Good With Cats</label>
-                <select class="form-control" id="formGWC">
-                    <option>True</option>
-                    <option>False</option>
+                <select name="goodWithCats" class="form-control" id="formGWC" required>
+                    <option>true</option>
+                    <option>false</option>
                 </select>
             </div>
+            {{!-- Location --}}
             <div class="form-group">
                 <label for="formLocation">Location</label>
-                <input type="text" class="form-control" id="formLocation" placeholder="ex: Nashville, TN">
+                <input name="location" type="text" class="form-control" id="formLocation" placeholder="ex: Nashville, TN" required>
             </div>
+            {{!-- Seller Phone --}}
             <div class="form-group">
                 <label for="formPhone">Your Phone Number</label>
-                <input type="phone" class="form-control" id="formPhone" placeholder="123.456.7890">
+                <input name="sellerPhone" type="phone" class="form-control" id="formPhone" placeholder="123.456.7890" required>
             </div>
+            {{!-- Seller Email --}}
             <div class="form-group">
                 <label for="formEmail">Your Email address</label>
-                <input type="email" class="form-control" id="formEmail" placeholder="name@example.com">
+                <input name="sellerEmail" type="email" class="form-control" id="formEmail" placeholder="name@example.com" required>
             </div>
             <button type="submit" class="btn" id="formSubmit">Submit</button>
         </form>
