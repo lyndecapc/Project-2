@@ -41,10 +41,7 @@ body {
 .btn {
   background-color: #506FB3;
   color: white;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin: 100px 10px;
   padding: 15px;
 } 
 
@@ -57,6 +54,13 @@ body {
 /* =================================
             List Dogs
 ================================= */
+
+#addPageTitle {
+  text-align: center;
+  margin-top: 75px;
+  padding-bottom: 25px;
+  border-bottom: 4px solid #506FB3;
+}
 
 #formBody {
   width: 50%;
@@ -74,11 +78,6 @@ form {
   width: 25%;
 }
 
-#addPageTitle {
-  text-align: center;
-  margin-top: 75px;
-}
-
 #formSubmit {
   margin: 15px 0 0 0;
 }
@@ -90,18 +89,53 @@ form {
 #dogPageTitle {
   text-align: center;
   margin-top: 75px;
+  padding-bottom: 25px;
+  border-bottom: 4px solid #506FB3;
 }
 
-#gallery {
-  margin: 30px 0;
+.dog {
+  width: 80%;
+  background-color: #e6ce96;
+  color: #000;
+  padding: 25px;
+  margin: 20px 10%;
 }
 
-.dogCard {
-    margin: 20px 0;
+.dog h5 {
+  text-decoration: underline;
+  margin-bottom: 25px;
 }
 
-.card-title {
-  margin: 0;
+.dogImg {
+  width: 50%;
+  border: 8px solid #506FB3;
+  float: left;
+  margin: 15px 0 0 10%;
+}
+
+.dog ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.dog li {
+  margin-right: 0.5rem;
+  padding: 8px;
+}
+
+.dog span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.dog .btn {
+  margin: 20px 10px;
+}
+
+.sellerButtons {
+  display: block;
+  padding: 0;
+  margin: 0 34%;
 }
 
 /* =================================
