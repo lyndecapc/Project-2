@@ -51,7 +51,7 @@
 .ism-slider .ism-img-frame {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
@@ -62,7 +62,7 @@
   display: block;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
@@ -96,60 +96,8 @@
   display: block;
 }
 
-.ism-caption {
-  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-  padding: 0 1em;
-  text-shadow: none;
-  line-height: 1.2em;
-  padding: 0.25em 0.5em;
-  width: auto;
-  height: auto;
-  text-align: center;
-  visibility: hidden;
-}
 
-a.ism-image-link .ism-caption, a.ism-caption {
-  text-decoration: none;
-  font-weight: normal;
-}
 
-a.ism-caption:hover {
-  text-decoration: underline;
-}
-
-.ism-caption-0 {
-  z-index: 3;
-}
-
-.ism-caption-1 {
-  z-index: 4;
-}
-
-.ism-caption-2 {
-  z-index: 5;
-}
-
-.ism-radios {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: #fff;
-  font-size: 1px;
-}
-
-.ism-slider .ism-radios {
-  position: absolute;
-  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-  z-index: 6;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  width: auto;
-  background-color: rgba(255, 255, 255, 0.0);
-  padding: 0 7px;
-  height: 0;
-  overflow: visible;
-}
 
 .ism-slider .ism-radios.ism-radios-as-thumbnails {
   bottom: 5px;
