@@ -7,10 +7,9 @@ body{
 .blob{
   width:600px;
   height:600px;
-  margin: 100px;
+  /* margin: 100px; */
   position:relative;
   display:flex;
-
 }
 .blob::before{
   width:100%;
@@ -19,7 +18,7 @@ body{
   background-repeat: no-repeat;
   content:'';
   position:absolute;
-  left:0; top:0;
+  left:-150; top:0;
   animation: rotate 30s linear infinite;
 }
 
@@ -34,7 +33,8 @@ body{
 }
 .blob-girl {
 position: relative;
-left: 600px;
+left: 300px;
+float: left;
 width: 100%;
 bottom: 200px;
 }
