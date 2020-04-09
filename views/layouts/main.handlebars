@@ -22,11 +22,19 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="/"><img width="260px" height="140px" src="/img/houndersLogo.png" alt="Hounders Logo"></a>
+        <a class="navbar-brand" href="/"><img width="260px" height="140px" src="/img/houndersLogo.png"
+            alt="Hounders Logo"></a>
         <div class="collapse navbar-collapse justify-content-end" id="bs-example-navbar-collapse-1">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a href="#"><button class="btn btn-md btn-tan">Login</button></a>
+              {{!-- <a href="#"><button class="btn btn-md btn-tan">Login</button></a> --}}
+              <div class="row">
+                <div class="col-sm-12 text-center home-buttons">
+                  <a href="/add"><button class="btn btn-md">List a dog</button></a>
+                  <a href="/dogs"><button class="btn btn-md">Buy a dog</button></a>
+                  {{!-- <a href="/adopt"><button class="btn btn-md">Adopt a dog</button></a> --}}
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -35,15 +43,18 @@
   </div>
   {{!-- Body Content --}}
   <div class="row">
-  {{{body}}}
+    {{{body}}}
   </div>
   {{!-- Footer --}}
   <div class="row">
     <div class="clear-fix"></div>
     <div class="footer fixed-bottom">
-      <p>Created by: <a href="https://github.com/lyndecapc">Lynde Capogreco</a>, <a href="https://github.com/Jessiejtaylor">Jessie Taylor</a>, <a href="https://github.com/austindickey">Austin Dickey</a></p>
+      <p>Created by: <a href="https://github.com/lyndecapc">Lynde Capogreco</a>, <a
+          href="https://github.com/Jessiejtaylor">Jessie Taylor</a>, <a href="https://github.com/austindickey">Austin
+          Dickey</a></p>
     </div>
   </div>
-  
+
 </body>
+
 </html>
