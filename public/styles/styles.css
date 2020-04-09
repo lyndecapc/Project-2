@@ -29,8 +29,11 @@ body {
 }
 
 #aboutUsParagraph {
-  text-align: center;
-  margin: 0 100px;
+  text-align: left;
+  margin: 0 35px;
+  width: 150px;
+  /* position: relative;
+  left: 20%; */
 }
 
 #aboutUs {
