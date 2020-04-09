@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 body{
 
-  /* font-family: 'Bebas Neue', cursive; */
-  /* font-size:30px; */
+  font-family: 'Bebas Neue', cursive;
+  font-size:30px;
+} */
+
+.blob-master {
+  margin: 10px 15%;
 }
+
 .blob{
   width:600px;
   height:600px;
   /* margin: 100px; */
-  position:relative;
+  position: absolute;;
   display:flex;
+  z-index: 1;
 }
 .blob::before{
   width:100%;
@@ -17,8 +23,8 @@ body{
   background-image: url("/img/circles.png");
   background-repeat: no-repeat;
   content:'';
-  position:absolute;
-  left:-150; top:0;
+  /* position:absolute;
+  left:-150; top:0; */
   animation: rotate 30s linear infinite;
 }
 
@@ -31,50 +37,26 @@ body{
   left:0; top:0;
   animation: rotate 40s linear infinite;
 }
-.blob-girl {
-position: relative;
-left: 300px;
-float: left;
-width: 100%;
-bottom: 200px;
-}
-
-.blob {
-position: absolute;
-margin-bottom: 300px;
-margin-left: 100px;
-z-index: 1;
-}
 
 .blob-picture {
-position: absolute;
-margin-top: 200px;
-margin-left: 300px;
-/* margin-bottom: 300px; */
-z-index: 2;
-/* animation: rotate 17s linear infinite; */
-
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 200px;
+  /* margin-bottom: 300px; */
+  z-index: 2;
+  /* animation: rotate 17s linear infinite; */
 }
 
 
 
 
 @keyframes rotate{
-  0%{
-    /* transform:rotate(0deg); */
-    
-  }
   50%{
     transform:rotate(50deg);
-  }
-  100%{
-    /* transform:rotate(360deg);
-    background-image: url("/img/girlanddog.png"); */
   }
 }
 
 .blob-style {
     width:300px;
     height:300px;
-
 }

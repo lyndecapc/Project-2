@@ -24,14 +24,14 @@ body {
 .home-body {
   background-size: cover;
   background-color: #e6ce96;
-  margin: 45px 100px;
+  margin: 45px 0;
   border-radius: 50px;
+  height: 400px;
+  padding: 20px 75px;
 }
 
 #aboutUsParagraph {
-  text-align: left;
-  margin: 0 35px;
-  width: 150px;
+  /* margin: 0 35px; */
   /* position: relative;
   left: 20%; */
 }
@@ -52,6 +52,10 @@ body {
   background-color: #e6ce96;
   color: #506FB3;
   padding: 10px;
+}
+
+.bodyClearFix {
+  height: 75px;
 }
 
 /* =================================
