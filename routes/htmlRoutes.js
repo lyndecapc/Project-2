@@ -15,6 +15,11 @@ module.exports = function (app) {
     })
   })
 
+  // Load adopt page
+  app.get("/adopt", function (req, res) {
+    res.render("adopt")
+  })
+
   // Load all dogs
   app.get('/dogs', (req, res) =>
     db.Dog.findAll()
