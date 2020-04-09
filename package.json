@@ -11,11 +11,14 @@
   },
   "license": "ISC",
   "dependencies": {
+    "@petfinder/petfinder-js": "^1.0.6",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "express-handlebars": "^3.1.0",
     "mysql": "^2.18.1",
     "mysql2": "^1.6.5",
+    "petfinder-promise": "^1.0.0",
+    "require": "^2.4.20",
     "sequelize": "^5.8.6"
   },
   "devDependencies": {
