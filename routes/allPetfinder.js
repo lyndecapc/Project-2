@@ -1,23 +1,16 @@
-// // Import module
-// var petfinder = require('petfinder-promise')('keb5oP5dpxdKjhpDbcve88lw5QP2uyFADw1xSrqZVTUFPItI1Y', '7GrBKM2aRb2B7TICtRxcPbMEA34ofaVn29bwuVVK');
+var petfinder = require("@petfinder/petfinder-js")
+var client = new petfinder.Client({apiKey: "keb5oP5dpxdKjhpDbcve88lw5QP2uyFADw1xSrqZVTUFPItI1Y", secret: "CI9zv2Hejza5FGOi2xd6qvnH877dAayCMlEPGiy9"})
 
-// var location = "37129"
-
-// // Get a list of cat breeds
-// petfinder.pet.find(location, {'count': 10}).then(function (data) {
-//     console.log(data);
-
-//     // var data = response.data.animals[19]
-//     // console.log(data);
-//     //console.log(response.data.animals[0].contact)
-//     // var available = $("#availablePets")
-
-//     // var newH3 = $("<h3>")
-
-//     // newH3.text(data.name)
-
-//     // available.append(newH3)
-
-// }).catch(function (err) {
-//     console.log('Error: ' + err.message);
-// })
+client.animal.search({type: "Dog"})
+    .then(function (response) {
+        var data = response.data.animals
+        console.log(data[0])
+        
+        var available = $("#availablePets")
+        var newH3 = $("<h3>")
+        newH3.text(data[0].name)
+        available.append(newH3)
+    })
+    .catch(function (error) {
+        // Handle the error
+    })
