@@ -147,6 +147,17 @@ form {
 }
 
 /* =================================
+            Adopt Dogs
+================================= */
+
+#adoptPageTitle {
+  text-align: center;
+  margin-top: 75px;
+  padding-bottom: 25px;
+  border-bottom: 4px solid #506FB3;
+}
+
+/* =================================
             Footer
 ================================= */
 

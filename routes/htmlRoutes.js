@@ -10,7 +10,9 @@ module.exports = function (app) {
 
   // Load add page
   app.get("/add", function (req, res) {
-    db.Dog.findAll({}).then(function (data) {
+    db.Dog.findAll({
+      order: [["updatedAt", "DESC"]]
+    }).then(function (data) {
       res.render("add")
     })
   })
