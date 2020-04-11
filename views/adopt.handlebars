@@ -6,6 +6,34 @@
     <div class="row">
         <div id="availablePets">
 
+            {{#each data}}
+            <div class="dog">
+                <h5 class="text-center">{{name}}</h5>
+                <img class="dogImg" src="{{photos.0.full}}" alt="Picture is not available">
+                <ul>
+                    <li><span>Breed:</span> {{breeds.primary}}</li>
+                    <li><span>Gender:</span> {{gender}}</li>
+                    <li><span>Color:</span> {{colors.primary}}</li>
+                    <li><span>Size:</span> {{size}}</li>
+                    <li><span>Age:</span> {{age}}</li>
+                    <li><span>Good With Dogs:</span> {{environment.dogs}}</li>
+                    <li><span>Good With Kids:</span> {{environment.children}}</li>
+                    <li><span>Good With Cats:</span> {{environment.cats}}</li>
+                    <li><span>Location:</span> {{contact.address.city}}, {{contact.address.state}}</li>
+                </ul>
+                <div class="sellerButtons">
+                    <a href="tel:{{contact.phone}}"><button class="btn btn-md">Call Seller</button></a>
+                    <a href="mailto:{{contact.email}}"><button class="btn btn-md">Email Seller</button></a>
+                </div>
+                <div class="petPageLink">
+                    <a href="{{url}}" target="_blank"><button class="btn btn-md">View Full Profile</button></a>
+                </div>
+            </div>
+            <hr>
+            {{else}}
+            <p class="text-center">No dogs available</p>
+            {{/each}}
+
         </div>
     </div>
 

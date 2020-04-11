@@ -21,7 +21,6 @@ app.set("view engine", "handlebars")
 
 // Routes
 require("./routes/htmlRoutes")(app)
-require("./routes/allPetfinder")
 
 var syncOptions = { force: false }
 

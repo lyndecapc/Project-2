@@ -1,14 +1,14 @@
 {
   "development": {
-    "username": "jason",
-    "password": "Vandb2020",
+    "username": "austin",
+    "password": "root",
     "database": "hounders_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
-    "username": "jason",
-    "password": "Vandb2020",
+    "username": "austin",
+    "password": "root",
     "database": "hounders_db",
     "host": "localhost",
     "dialect": "mysql",
