@@ -22,25 +22,42 @@ body {
 ================================= */
 
 .home-body {
+  color: whitesmoke;
   background-size: cover;
   background-color: #e6ce96;
   margin: 70px 0px 70px 25%;
   border-radius: 50px;
   height: 400px;
-  padding: 20px 75px;
+  padding: 20px 40px;
 }
 
 #aboutUs {
   margin: 75px 0 20px 0;
-  text-align: center;
-  font-size: xx-large;
+  text-align: left;
+  font-size: 50px;
   font-family: sans-serif;
+  font-weight: lighter;
+}
+
+#aboutUs2 {
+  text-align: left;
+  font-size: 55px;
+  font-family: sans-serif;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  margin-top: -30px;
+}
+
+#hr {
+  text-decoration: wavy;
 }
 
 #aboutUsParagraph {
+  color: #506FB3;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  background-image: url(../img/golden.png);
+  margin-top: 10px;
+  text-align: left;
 }
 
 .btn {
