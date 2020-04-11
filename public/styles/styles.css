@@ -157,6 +157,12 @@ form {
   border-bottom: 4px solid #506FB3;
 }
 
+.petPageLink {
+  display: block;
+  padding: 0;
+  margin: 0 40%;
+}
+
 /* =================================
             Footer
 ================================= */
