@@ -6,7 +6,7 @@ body{
 } */
 
 .blob-master {
-  margin: 10px 15%;
+  margin: 35px 25%;
 }
 
 .blob{
@@ -20,12 +20,16 @@ body{
 .blob::before{
   width:100%;
   height:100%;
-  background-image: url("/img/circles.png");
+  background-image: url("/img/paw.png");
   background-repeat: no-repeat;
   content:'';
   /* position:absolute;
   left:-150; top:0; */
-  animation: rotate 30s linear infinite;
+  transform: translate3d(10px);
+
+  /* animation: rotate 30s linear infinite; */
+  animation: bobble 8s infinite;
+
 }
 
 .blob::after{
@@ -39,21 +43,18 @@ body{
   /* animation: rotate 40s linear infinite; */
 }
 
-.blob-picture {
-  position: absolute;
-  margin-top: 200px;
-  margin-left: 200px;
-  /* margin-bottom: 300px; */
-  z-index: 2;
-  /* animation: rotate 17s linear infinite; */
-}
-
-
-
-
-@keyframes rotate{
-  50%{
-    transform:rotate(50deg);
+@keyframes bobble{
+  0% {
+    /* transform:rotate(50deg); */
+    transform: translate3d(0px, 0px, 0px);
+  animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, 20px, 0px);
+  animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
   }
 }
 
