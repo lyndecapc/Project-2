@@ -1,0 +1,32 @@
+/* =================================
+        Mobile Responsiveness
+================================= */
+
+@media (max-width: 1450px) {
+    .home-body{margin-left: 10px;}
+}
+
+@media (max-width: 1024px) {
+    .home-body {margin-left: 10px;}
+    #aboutUs {font-size: 40px; margin-top: 15px;}
+    #aboutUs span {font-size: 42px;}
+    .sellerButtons {margin: 0 31%;}
+    .petPageLink {margin: 0 38%;}
+}
+
+@media (max-width: 768px) {
+    .home-body {height: 275px;}
+    .bodyClearFix {height: 550px;}
+    #formBody {width: 80%; margin: 25px 10%;}
+    .choose {width: 40%;}
+    .dogImg {width: 80%;}
+    .sellerButtons {margin: 0 24%;}
+    .dogImg {width: 80%;}
+    .dog ul {margin-top: 25px;}
+    .sellerButtons {margin: 0 24%;}
+    .petPageLink {margin: 0 34%;}
+}
+
+@media (max-width: 414px) {
+    #formBody {width: 100%; margin: 25px 0;}
+}
