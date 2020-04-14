@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "austin",
-    "password": "root",
+    "username": "lynde",
+    "password": "capogrlj54",
     "database": "hounders_db",
     "host": "localhost",
     "dialect": "mysql"

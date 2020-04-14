@@ -1,3 +1,4 @@
+require("dotenv").config()
 var db = require("../models")
 var petfinder = require("@petfinder/petfinder-js")
 var client = new petfinder.Client({apiKey: process.env.apiKey, secret: process.env.secret})
