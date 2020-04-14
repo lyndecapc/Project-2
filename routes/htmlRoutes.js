@@ -1,7 +1,7 @@
 require("dotenv").config()
 var db = require("../models")
 var petfinder = require("@petfinder/petfinder-js")
-var client = new petfinder.Client({apiKey: "keb5oP5dpxdKjhpDbcve88lw5QP2uyFADw1xSrqZVTUFPItI1Y", secret: "CI9zv2Hejza5FGOi2xd6qvnH877dAayCMlEPGiy9"})
+var client = new petfinder.Client({apiKey: process.env.apiKey, secret: process.env.secret})
 
 module.exports = function (app) {
   // Load index page
