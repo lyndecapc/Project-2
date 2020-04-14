@@ -26,6 +26,10 @@ body {
   padding: 20px 35px;
 }
 
+.navbar-brand img {
+  width: 300px;
+}
+
 /* =================================
             Home Content
 ================================= */
